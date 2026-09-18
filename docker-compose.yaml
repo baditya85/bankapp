@@ -23,7 +23,7 @@ services:
             start_period: 60s
     
     bankapp:
-        image: devops850000/springboot-bankapp:latest
+        image: devops850000/bank-app:latest
         container_name: BankApp
         ports:
             - 8080:8080
