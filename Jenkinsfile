@@ -28,8 +28,7 @@ pipeline{
         }
         stage("networkcreate"){
             steps{
-                sh "docker network rm bankapp"
-                sh "docker network create bankapp -d bridge"
+                sh "docker network rm bankapp && docker network create bankapp -d bridge"
             }
         }
         stage("deploy"){
